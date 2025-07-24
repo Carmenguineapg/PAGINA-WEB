@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Página Personal | Carmen Guinea</title>
+  <style>
+    /* Estilos base */
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f7f9fc;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    /* ENCABEZADO */
+    .encabezado {
+      background-color: #004466;
+      color: white;
+      padding: 2rem 1rem;
+    }
+
+    .contenedor-encabezado {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 1.5rem;
+    }
+
+    .foto-perfil {
+      width: 130px;
+      height: 130px;
+      border-radius: 50%;
+      border: 3px solid white;
+      object-fit: cover;
+    }
+
+    .info-encabezado h1 {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .info-encabezado p {
+      font-size: 1.1rem;
+    }
+
+    /* CONTENIDO PRINCIPAL */
+    main {
+      max-width: 1100px;
+      margin: auto;
+      padding: 2rem;
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+    }
+
+    /* SECCIÓN SOBRE MÍ */
+    .sobre-mi {
+      background-color: white;
+      padding: 2rem;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .sobre-mi h2 {
+      color: #004466;
+      margin-bottom: 1rem;
+    }
+
+    .sobre-mi p {
+      font-size: 1.1rem;
+      color: #333;
+    }
+
+    /* INTERESES Y HABILIDADES */
+    .grid-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .card {
+      background-color: white;
+      padding: 1.5rem;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    h2 {
+      color: #004466;
+      margin-bottom: 1rem;
+    }
+
+    ul {
+      padding-left: 1.5rem;
+    }
+
+    a {
+      color: #0077cc;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    /* FORMULARIO */
+    form input,
+    form textarea {
+      width: 100%;
+      padding: 0.7rem;
+      margin-top: 0.5rem;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    form label {
+      margin-top: 1rem;
+      display: block;
+    }
+
+    form button {
+      margin-top: 1.5rem;
+      padding: 0.8rem 1rem;
+      background-color: #004466;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    form button:hover {
+      background-color: #002f4d;
+    }
+
+    /* PIE DE PÁGINA */
+    footer {
+      text-align: center;
+      background-color: #eeeeee;
+      padding: 1rem;
+      font-size: 0.9rem;
+    }
+
+    footer p {
+      color: #666;
+    }
+
+    /* RESPONSIVE */
+    @media (max-width: 768px) {
+      .contenedor-encabezado {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .foto-perfil {
+        width: 110px;
+        height: 110px;
+      }
+
+      main {
+        padding: 1rem;
+      }
+
+      .sobre-mi {
+        padding: 1.5rem;
+      }
+
+      .grid-container {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ENCABEZADO -->
+  <header class="encabezado">
+    <div class="contenedor-encabezado">
+      <img src="carmenlogo.jpeg" alt="Foto de Carmen Guinea" class="foto-perfil">
+      <div class="info-encabezado">
+        <h1>Carmen Griselda Guinea Perez</h1>
+        <p>Estudiante de 6to Perito en contenido digital | Apasionada por la tecnología</p>
+      </div>
+    </div>
+  </header>
+
+  
+
+
+  <!-- CONTENIDO PRINCIPAL -->
+  <main>
+
+    <!-- SOBRE MÍ -->
+    <section class="sobre-mi">
+      <h2>Sobre mí</h2>
+      <p>
+        Soy Carmen Guinea Estudiante de 6to perito en desarrollo de contenido digital y software, una apasionada del desarrollo web y del diseño. Me encanta aprender nuevas tecnologías y trabajar en proyectos que representen un reto. Busco crecer profesionalmente creando soluciones creativas, funcionales y accesibles para todos.
+      </p>
+    </section>
+
+    <!-- INTERESES Y HABILIDADES -->
+    <section class="grid-container">
+      <div class="card">
+        <h2>Intereses</h2>
+        <ul>
+          <li>Desarrollo Web</li>
+          <li>Base de Datos</li>
+          <li>Diseño gráfico</li>
+          
+        </ul>
+      </div>
+
+      <div class="card">
+        <h2>Habilidades</h2>
+        <ul>
+          <li>HTML, CSS, JavaScript</li>
+          <li>Python, Java</li>
+          <li>Diseño UI/UX</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- VIDEO FAVORITO -->
+    <section class="card">
+      <h2>Video Favorito</h2>
+      <p>Este video me inspira mucho:</p>
+      <a href="https://youtu.be/tBObvkx_nOg?si=bPVQZGqbSwC9-zUl" target="_blank">▶ Ver en YouTube</a>
+    </section>
+
+    <!-- FORMULARIO DE CONTACTO -->
+    <section class="card">
+      <h2>Contacto</h2>
+      <form>
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" placeholder="Tu nombre">
+
+        <label for="email">Correo electrónico:</label>
+        <input type="email" id="email" name="email" placeholder="correo@ejemplo.com">
+
+        <label for="mensaje">Mensaje:</label>
+        <textarea id="mensaje" name="mensaje" rows="5" placeholder="Escribe tu mensaje..."></textarea>
+
+        <button type="submit">Enviar mensaje</button>
+      </form>
+    </section>
+
+  </main>
+
+  <!-- PIE DE PÁGINA -->
+  <footer>
+    <p>© 2025 Carmen Guinea. Todos los derechos reservados.</p>
+  </footer>
+
+</body>
+</html>
+
